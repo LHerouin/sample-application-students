@@ -1,3 +1,9 @@
 language: java
 
+addons:
+  sonarcloud:
+    organization: "lherouin"
+    token:
+      secure: "Ln1B/cbvZH0Wo7eph5tB29E14LJZorNHqtbZmu1v76OIQ9oMEpjJx5wLzVXsq5mwtn3KcqADMjOPRHj2JihTquwo/29bHwYr6RJ/g5M6er7mUeJrSRRqK0AoxnfYMIYzHgw4nJv9yJXG8wXEdmjpTY/nNZ+WBt3YMd6bQXkSkoqd0+8E1JE7TTPlTXLdIKC8t0dtAvQVZnoueO+5yErdfIIhbKoyNzE+LLaWotEfuHJOjIQr+KRUdjWBpo0BESAVHRgf/8ycSNsqh6ijYLhsynQ5S+ewVw6MZUlczwvx8GIGKUeaNqx8xlmmVQs6Dt4GvpGjISMbn4pbaesS2G6eh1RPHJStP+eHDEjDc3jFOGVA5honxLvxhJEiFtvatUuS0eff4y+fLqQvFPNWFHE4kfcTkOCS7R91LynN/RKdTYXso2bwg9BkoaqJrNj57/57sl9xt4AS7VJw6qR3GoPNTWq7x0XkKUzNk66DWjCyGIzFiIj4KdJh9yIAPpGvcnm/F15IA8XIlHKHXZO74mE2sHZbY+8dDfb6+q4ILAEen+7we8bbesoRGgpx9KytIGrg5NesMQ4mM+dTHbWcbV8LXByV+oeYkIn1GIk4PR5jCeauUnCFcSIdhOPCyVj6E/QNIAhUbGTQPzIdmTSoSCV+0JAljFhpf42llIbapCBDNXU=" # encrypted value of your token
+
 script: mvn clean verify
