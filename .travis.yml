@@ -1,9 +1,7 @@
 addons:
   sonarcloud:
     organization: "lherouin"
-    token:
-      secure: "imQQWPNXC1Sau2UoxPM6MbleeTHtTEIScqwDNO5MywNi3VZtPRWh0tuuCzAN9F7mQ3xp4iVstdgn/+OkdY2HypyYLEsxBsakjoSCFCMtcvBlLyWcfgsXLbYCjwKKET6gVqoLBfGzsi5RPlq2wYTz8tbq/FwCVtiyuL1QyKf8aI2PHlBPF4uyc4OEK+uRUbfX0CTanbgBXHvYPMIOaBB2ekDeBc/+aUwM2PxRHSJl+1DvB30vZwM1ZjcWJ7zZxMlglDZ2oWliuLpfx7I4/xzE6zyyxhELLW/w98VDQvVOsd2LRjXgZTJ/pbwOKCzGyO3cdQTAv24kbZ54VNw8eqZbT9un7wY29zJHUqGQLnprmkl7bqdxj1PH/1Gi2pnLbwOlWc3AJl59PZkAcd9ncueGik4SoZum4kE/WmB+AoAJk3ll+opHlS9SUrhvYtsuQxmxsbnYzH9GDauYypzVhXu49v94IU9M6CpJb8USvBAcNN2gwLqLxvHn4+3l1iVyREZLGVnoEx40SO1lYb2LNfWBbg+oxw7QJ7ZZiaOMaLAjRXpuFsqNyuOHym0/kctyfb58Ox/etPX7C3A+F7pSxPyj2y0kOoPyXnEMwyC722Unk6YIo3p6qvk4MY7mn3TXNMUj3IpTwragk0b+3ictrMt7R0g9Wj4Bxw4IjEADBl1IZl0=" # encrypted value of your token
-
+    token: $SONARSECRET
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=LHerouin_sample-application-students
