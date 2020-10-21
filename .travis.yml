@@ -4,4 +4,7 @@ addons:
     token:
       secure: "XUKWSAzw+bOYwG31q/4b0VGRQDPCA5DcTft/CJ4AZBmcC2AIKF+k71eFTOjSHMS0xZ6Yd9kErviTEGobFj7qZ1rMOddmIMev82cAa4LeXorW/tfQjbHygXA9ol7RIaUOaipDGMT8IAZPt/rzPHyopYm7YL8Yy9r5xYCPp9lTPuP0uIsU1vla0hqjBo/ttA4mzcysEs1ZVbBgoZPpT+3iG/ncAHUT41RyTjYrIqt0roO3YZsX/04E412Do88KeuHC0AwS1ZR00Lm/fqUOvAndjbNIeQBEBqfr+p+VOKwLE3F+Nfw94e+drQdv4cma+i4t6yyOOgiBoCLIX9XwK94SNVG64eAbE+2A/1tc/XusIRmZR84pavimbGlrkwLOCEuSDUx7UBJclaUoOfc2YjGnxyA/OT7229C/alG/xiN8CPNfT15hTtpzBYOJbjpzfTSTFpE/WHMa1qVsemBYAF02qX599oYWwrw9z5YDGhG9R1PqUDeylNAyHSHgZi9BwgW9J2a/D6SJECU6rzPKV8qqJpvXuVFeTozh/Ach9dkxTx5Ost8aUe7jjZN+05ItreXfKGx4ETet8JcOOkHcKuewlcYavtkor8fAhAcEXjIEUgvQ8zXmugbAlqwCNUzGNNW/ZC2ZrPfVDOvjqZtmKQzQzIulm0hqzdSP4rUI5SQrMbA="
 
-script: mvn clean verify
+script: 
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - sonar-scanner
+  mvn clean verify
